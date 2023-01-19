@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+    </div>
+
+    <div class="container">
+      <h2>CALCULATOR</h2>
+      <form action="">
+        <input type="text" id="result" />
+        <div class="buttons">
+          <input onclick="allClear()" type="button" value="AC" />
+          <input onclick="displaydata('/')" type="button" value="/" />
+          <input onclick="displaydata('%')" type="button" value="%" />
+          <input onclick="removeData()" type="button" value="&#9003;" />
+        </div>
+        <div class="buttons">
+          <input onclick="displaydata(9)" type="button" value="9" />
+          <input onclick="displaydata(8)" type="button" value="8" />
+          <input onclick="displaydata(7)" type="button" value="7" />
+          <input onclick="displaydata('*')" type="button" value="x" />
+        </div>
+        <div class="buttons">
+          <input onclick="displaydata(6)" type="button" value="6" />
+          <input onclick="displaydata(5)" type="button" value="5" />
+          <input onclick="displaydata(4)" type="button" value="4" />
+          <input onclick="displaydata('-')" type="button" value="-" />
+        </div>
+        <div class="buttons">
+          <input onclick="displaydata(1)" type="button" value="1" />
+          <input onclick="displaydata(2)" type="button" value="2" />
+          <input onclick="displaydata(3)" type="button" value="3" />
+          <input onclick="displaydata('+')" type="button" value="+" />
+        </div>
+        <div class="buttons">
+          <input onclick="displaydata(0)" type="button" value="0" />
+          <input onclick="displaydata('00')" type="button" value="00" />
+          <input onclick="displaydata('.')" type="button" value="." />
+          <input onclick="evaluateData()" type="button" value="=" />
+        </div>
+      </form>
+    </div>
+
+
+  </body>
+
+  <script src="./main.js"></script>
+
+</html>
